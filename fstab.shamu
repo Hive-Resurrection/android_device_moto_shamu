@@ -4,13 +4,8 @@
 #
 #<src>                                                <mnt_point>  <type>  <mnt_flags and options>                     <fs_mgr_flags>
 /dev/block/platform/msm_sdcc.1/by-name/system         /system      ext4    ro,barrier=1                                wait
-<<<<<<< HEAD
-/dev/block/platform/msm_sdcc.1/by-name/userdata    /data        ext4    rw,nosuid,nodev,noatime,nodiratime,noauto_da_alloc,nobarrier    wait,check,formattable,forceencrypt=/dev/block/platform/msm_sdcc.1/by-name/metadata
-/dev/block/platform/msm_sdcc.1/by-name/cache       /cache       ext4    rw,noatime,nosuid,nodev,barrier=1,data=ordered   wait,check,formattable
-=======
 /dev/block/platform/msm_sdcc.1/by-name/userdata    /data        ext4    rw,nosuid,nodev,noatime,nodiratime,noauto_da_alloc,nobarrier    wait,check,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /dev/block/platform/msm_sdcc.1/by-name/cache       /cache       ext4    rw,noatime,nosuid,nodev,barrier=1,data=ordered   wait,check
->>>>>>> 8b58b12... change fstab to non force encrypt, add missing google everywhere permission, add wifi calling props
 /dev/block/platform/msm_sdcc.1/by-name/modem       /firmware    ext4    ro,barrier=1,context=u:object_r:firmware_file:s0    wait
 /dev/block/platform/msm_sdcc.1/by-name/persist     /persist     ext4    rw,nosuid,nodev,barrier=1                      wait,check
 /dev/block/platform/msm_sdcc.1/by-name/boot         /boot           emmc    defaults                                                        defaults
